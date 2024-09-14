@@ -2,232 +2,231 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 List festivalList=[
-
-  {
-    'Festival name' : 'Makar Sakranti',
-    'Text': 'Create your Makar Sakranti Templates',
-    'Images' : 'assets/images/1.jpeg',
-    'Color' :Colors.teal,
-    'image' : [
-      'assets/images/Makar sankranti/M.S1.jpeg',
-      'assets/images/Makar sankranti/M.S2.jpeg',
-      'assets/images/Makar sankranti/M.S3.jpeg',
-      'assets/images/Makar sankranti/M.S4.jpeg',
-      'assets/images/Makar sankranti/M.S5.jpeg',
-      'assets/images/Makar sankranti/M.S6.jpeg',
-      'assets/images/Makar sankranti/M.S7.jpeg',
-    ]
-  },
-
-
-  {
-    'Festival name' : 'Karwa Chauth',
-    'Text': 'Create your Karwa Chauth Templates',
-    'Images' : 'assets/images/2.jpeg',
-    'Color' : Colors.green,
-    'image' : [
-      'assets/images/Makar sankranti/M.S1.jpeg',
-      'assets/images/Makar sankranti/M.S2.jpeg',
-      'assets/images/Makar sankranti/M.S3.jpeg',
-      'assets/images/Makar sankranti/M.S4.jpeg',
-      'assets/images/Makar sankranti/M.S5.jpeg',
-      'assets/images/Makar sankranti/M.S6.jpeg',
-      'assets/images/Makar sankranti/M.S7.jpeg',
-    ]
-  },
-
-  {
-    'Festival name' : 'Maha Shivratri',
-    'Text': 'Create your Maha Shivratri Templates',
-    'Images' :'assets/images/3.jpeg',
-    'Color' : Colors.pink,
-    'image' : [
-      'assets/images/mahashivratri/maha 1.jpg',
-      'assets/images/mahashivratri/maha 2.jpg',
-      'assets/images/mahashivratri/maha 3.jpg',
-    ]
-  },
-
   {
     'Festival name' : 'Diwali',
     'Text': 'Create your Diwali Templates',
-    'Images' : 'assets/images/4.jpg',
-    'Color' : Colors.purple,
-    'image' : [
-      'assets/images/Diwali/diwali 9.jpg',
-      'assets/images/Diwali/diwali 8.png',
-      'assets/images/Diwali/diwali.png',
-      'assets/images/Diwali/diwali 2.png',
-      'assets/images/Diwali/diwali 3.jpg',
-      'assets/images/Diwali/diwali 4.png',
-      'assets/images/Diwali/diwali 5.png',
-      'assets/images/Diwali/diwali 6.png',
-      'assets/images/Diwali/diwali 7.png',
-    ]
+    'Images' : 'asset/img/festival_img/diwali.webp',
+    'Color' : Colors.redAccent,
+    'image':[
+      'asset/img/festival_img/diwali/diwali.webp',
+      'asset/img/festival_img/diwali/img1.jpg',
+      'asset/img/festival_img/diwali/img2.jpg',
+      'asset/img/festival_img/diwali/img3.jpg',
+      'asset/img/festival_img/diwali/img4.jpg',
+      'asset/img/festival_img/diwali/img5.jpg'
+    ],
   },
-
-
   {
     'Festival name' : 'Raksha Bandhan',
     'Text': 'Create your Raksha Bandhan Templates',
-    'Images' : 'assets/images/5.jpeg',
-    'Color' : Colors.blue,
-    'image' : [
-      'assets/images/rakshabandhan/raksha 1.jpg',
-      'assets/images/rakshabandhan/raksha 2.jpg',
-      'assets/images/rakshabandhan/raksha 3.jpg',
-    ]
+    'Images' : 'asset/img/festival_img/raksha_bandhan.jpg',
+    'Color' : Colors.amber,
+    'image':[
+      'asset/img/festival_img/Raksha Bandhan/raksha_bandhan.jpg',
+      'asset/img/festival_img/Raksha Bandhan/img1.jpg',
+      'asset/img/festival_img/Raksha Bandhan/img2.jpg',
+      'asset/img/festival_img/Raksha Bandhan/img3.jpg',
+      'asset/img/festival_img/Raksha Bandhan/img4.jpg',
+      'asset/img/festival_img/Raksha Bandhan/img5.jpg',
+    ],
   },
-
-
-  // {
-  //   'Festival name' : 'Basant Panchami',
-  //   'Text': 'Create your Basant Panchami Templates',
-  //   'Images' : 'assets/images/6.jpeg',
-  //   'Color' : Colors.amber,
-  //   'image' : [
-  //   'assets/images/navratri/navratri 1.jpeg',
-  //   'assets/images/navratri/navratri 2.jpeg',
-  //   'assets/images/navratri/navratri 3.jpeg',
-  // ]
-  // },
-
+  {
+    'Festival name' : 'Pongal',
+    'Text': 'Create your Pongal Templates',
+    'Images' : 'asset/img/festival_img/pongal.jpg',
+    'Color' : Colors.purple,
+    'image':[
+      'asset/img/festival_img/pogal/pongal.jpg',
+      'asset/img/festival_img/pogal/img1.jpg',
+      'asset/img/festival_img/pogal/img2.jpg',
+      'asset/img/festival_img/pogal/img3.jpg',
+      'asset/img/festival_img/pogal/img4.jpg',
+      'asset/img/festival_img/pogal/img5.jpg'
+    ],
+  },
+  {
+    'Festival name' : 'Makar Sakranti',
+    'Text': 'Create your Makar Sakranti Templates',
+    'Images' : 'asset/img/festival_img/makar_sankranti.jpg',
+    'Color' :Colors.red,
+    'image':[
+      'asset/img/festival_img/maker sakranti/makar_sankranti.jpg',
+      'asset/img/festival_img/maker sakranti/img1.jpg',
+      'asset/img/festival_img/maker sakranti/img2.jpg',
+      'asset/img/festival_img/maker sakranti/img3.jpg',
+      'asset/img/festival_img/maker sakranti/img4.jpg',
+      'asset/img/festival_img/maker sakranti/img5.jpg',
+    ],
+  },
+  {
+    'Festival name' : 'Basant Panchami',
+    'Text': 'Create your Basant Panchami Templates',
+    'Images' : 'asset/img/festival_img/basant_panchami.jpg',
+    'Color' : Colors.blue,
+    'image':[
+      'asset/img/festival_img/Basnt panchami/basant_panchami.jpg',
+      'asset/img/festival_img/Basnt panchami/img1.jpg',
+      'asset/img/festival_img/Basnt panchami/img2.jpg',
+      'asset/img/festival_img/Basnt panchami/img3.jpg',
+      'asset/img/festival_img/Basnt panchami/img4.jpg',
+      'asset/img/festival_img/Basnt panchami/img5.jpg',
+    ],
+  },
+  {
+    'Festival name' : 'Maha Shivratri',
+    'Text': 'Create your Maha Shivratri Templates',
+    'Images' : 'asset/img/festival_img/maha_shivratri.jpg',
+    'Color' : Colors.blueGrey,
+    'image':[
+      'asset/img/festival_img/maha shivratri/maha_shivratri.jpg',
+      'asset/img/festival_img/maha shivratri/img1.jpg',
+      'asset/img/festival_img/maha shivratri/img2.jpg',
+      'asset/img/festival_img/maha shivratri/img3.jpg',
+      'asset/img/festival_img/maha shivratri/img4.jpg',
+      'asset/img/festival_img/maha shivratri/img5.jpg',
+    ],
+  },
 
   {
     'Festival name' : 'Navratri',
     'Text': 'Create your Navratri Templates',
-    'Images' : 'assets/images/7.jpg',
+    'Images' : 'asset/img/festival_img/navratri.jpg',
     'Color' : Colors.red,
-    'image' : [
-      'assets/images/navratri/navratri 1.jpg',
-      'assets/images/navratri/navratri 2.jpg',
-      'assets/images/navratri/navratri 3.jpg',
-    ]
+    'image':[
+      'asset/img/festival_img/navratri/navratri.jpg',
+      'asset/img/festival_img/navratri/img1.jpg',
+      'asset/img/festival_img/navratri/img2.jpg',
+      'asset/img/festival_img/navratri/img3.jpg',
+      'asset/img/festival_img/navratri/img4.jpg',
+      'asset/img/festival_img/navratri/img5.jpg',
+    ],
   },
-
-
   {
     'Festival name' : 'Holi',
     'Text': 'Create your holi Templates',
-    'Images' : 'assets/images/8.jpeg',
-    'Color' : Colors.teal,
-    'image' : [
-      'assets/images/holi/holi 1.jpg',
-      'assets/images/holi/holi 2.jpg',
-      'assets/images/holi/holi 3.jpg',
-      'assets/images/holi/holi 4.jpg',
-      'assets/images/holi/holi 5.jpg',
-      'assets/images/holi/holi 6.jpg',
-      'assets/images/holi/holi 7.jpg',
-
-    ]
+    'Images' : 'asset/img/festival_img/holi.jpg',
+    'Color' : Colors.lightGreen,
+    'image':[
+      'asset/img/festival_img/holi/holi.jpg',
+      'asset/img/festival_img/holi/img1.jpg',
+      'asset/img/festival_img/holi/img2.jpg',
+      'asset/img/festival_img/holi/img3.jpg',
+      'asset/img/festival_img/holi/img4.jpg',
+      'asset/img/festival_img/holi/img5.jpg',
+    ],
   },
-
-
-  // {
-  //   'Festival name' : 'Bhai dhuj',
-  //   'Text': 'Create your Bhai dhuj Templates',
-  //   'Images' : 'assets/images/9.jpeg',
-  //   'Color' : Colors.pink,
-  // },
-
-
+  {
+    'Festival name' : 'Bhai dhuj',
+    'Text': 'Create your Bhai dhuj Templates',
+    'Images' : 'asset/img/festival_img/Bhai_dhuj.jpg',
+    'Color' : Colors.pink,
+    'image':[
+      'asset/img/festival_img/bhai dooj/Bhai_dhuj.jpg',
+      'asset/img/festival_img/bhai dooj/img1.jpg',
+      'asset/img/festival_img/bhai dooj/img2.jpg',
+      'asset/img/festival_img/bhai dooj/img3.jpg',
+      'asset/img/festival_img/bhai dooj/img4.jpg',
+      'asset/img/festival_img/bhai dooj/img5.png',
+    ],
+  },
   {
     'Festival name' : 'Ganesh Chaturthi',
     'Text': 'Create your Ganesh Chaturthi Templates',
-    'Images' : 'assets/images/10.jpeg',
-    'Color' : Colors.amber,
-    'image' : [
-      'assets/images/ganesh/ganesh 1.jpg',
-      'assets/images/ganesh/ganesh 2.jpg',
-      'assets/images/ganesh/ganesh 3.jpg',
-      'assets/images/ganesh/ganesh 4.jpg',
-      'assets/images/ganesh/ganesh 5.jpg',
-      'assets/images/ganesh/ganesh 6.jpg',
-      'assets/images/ganesh/ganesh 7.jpg',
-    ]
+    'Images' : 'asset/img/festival_img/ganesh.jpg',
+    'Color' : Colors.deepOrange,
+    'image':[
+      'asset/img/festival_img/ganesh/ganesh.jpg',
+      'asset/img/festival_img/ganesh/img1.jpg',
+      'asset/img/festival_img/ganesh/img2.jpg',
+      'asset/img/festival_img/ganesh/img3.jpg',
+      'asset/img/festival_img/ganesh/img4.jpg',
+      'asset/img/festival_img/ganesh/img5.jpg',
+    ],
   },
-
-
   {
     'Festival name' : 'Independence Day',
     'Text': 'Create your Independence Day Templates',
-    'Images' : 'assets/images/11.jpeg',
-    'Color' : Colors.deepOrange,
-    'image' : [
-      'assets/images/independence/independence 1.jpg',
-      'assets/images/independence/independence 2.jpg',
-      'assets/images/independence/independence 3.jpg',
-      'assets/images/independence/independence 4.jpg',
-    ]
+    'Images' : 'asset/img/festival_img/day.jpg',
+    'Color' : Colors.orangeAccent,
+    'image':[
+      'asset/img/festival_img/independence/day.jpg',
+      'asset/img/festival_img/independence/img1.jpg',
+      'asset/img/festival_img/independence/img2.jpg',
+      'asset/img/festival_img/independence/img3.jpg',
+      'asset/img/festival_img/independence/img4.jpg',
+      'asset/img/festival_img/independence/img5.jpg',
+    ],
   },
-
-
-  // {
-  //   'Festival name' : 'Republic Day',
-  //   'Text': 'Create your Republic Day Templates',
-  //   'Images' : 'assets/images/12.jpeg',
-  //   'Color' : Colors.green,
-  // },
-
-
+  {
+    'Festival name' : 'Republic Day',
+    'Text': 'Create your Republic Day Templates',
+    'Images' : 'asset/img/festival_img/Republic_Day.jpg',
+    'Color' : Colors.black54,
+    'image':[
+      'asset/img/festival_img/republic/Republic_Day.jpg',
+      'asset/img/festival_img/republic/img1.jpg',
+      'asset/img/festival_img/republic/img2.jpg',
+      'asset/img/festival_img/republic/img3.jpg',
+      'asset/img/festival_img/republic/img4.jpg',
+      'asset/img/festival_img/republic/img5.jpg',
+    ],
+  },
   {
     'Festival name' : 'Krishna Janmashtami',
     'Text': 'Create your Krishna Janmashtami Templates',
-    'Images' : 'assets/images/13.jpeg',
-    'Color' : Colors.deepPurple,
-    'image' : [
-      'assets/images/janmashtami/jan 1.jpg',
-      'assets/images/janmashtami/jan 2.jpg',
-      'assets/images/janmashtami/jan 3.jpg',
-
-    ]
+    'Images' : 'asset/img/festival_img/Janmashtami.jpg',
+    'Color' : Colors.green,
+    'image':[
+      'asset/img/festival_img/krishna janmashtami/Janmashtami.jpg',
+      'asset/img/festival_img/krishna janmashtami/img1.jpg',
+      'asset/img/festival_img/krishna janmashtami/img2.jpg',
+      'asset/img/festival_img/krishna janmashtami/img3.jpg',
+      'asset/img/festival_img/krishna janmashtami/img4.jpg',
+      'asset/img/festival_img/krishna janmashtami/img5.jpg',
+    ],
   },
-
-
   {
     'Festival name' : 'Dussera',
     'Text': 'Create your Dussera Templates',
-    'Images' : 'assets/images/14.jpeg',
-    'Color' : Colors.blue,
-    'image' : [
-      'assets/images/Dussera/1.jpg',
-      'assets/images/Dussera/2.jpg',
-      'assets/images/Dussera/3.jpg',
-      'assets/images/Dussera/4.jpg',
-      'assets/images/Dussera/5.jpg',
-      'assets/images/Dussera/6.jpg',
-
-    ]
+    'Images' : 'asset/img/festival_img/Dussera.jpg',
+    'Color' : Colors.red,
+    'image':[
+      'asset/img/festival_img/dussehra/Dussera.jpg',
+      'asset/img/festival_img/dussehra/img1.jpg',
+      'asset/img/festival_img/dussehra/img2.jpg',
+      'asset/img/festival_img/dussehra/img3.jpg',
+      'asset/img/festival_img/dussehra/img4.jpg',
+      'asset/img/festival_img/dussehra/img5.jpg',
+    ],
   },
-
-
-  // {
-  //   'Festival name' : 'Ram Navami',
-  //   'Text': 'Create your Ram Navami Templates',
-  //   'Images' :'assets/images/15.jpeg',
-  //   'Color' : Colors.teal,
-  // },
-
-
   {
-    'Festival name' : 'Saraswati Pooj',
-    'Text': 'Create your Saraswati pooja Templates',
-    'Images' : 'assets/images/16.jpeg',
-    'Color' :Colors.amber,
-    'image' : [
-      'assets/images/vasant panchami/vasant pamchami 1.jpg',
-      'assets/images/vasant panchami/vasant panchami 2.jpg',
-      'assets/images/vasant panchami/vasant panchami 3.jpg',
-      'assets/images/vasant panchami/vasant panchami 4.jpg',
-      'assets/images/vasant panchami/vasant panchami 5.jpg',
-      'assets/images/vasant panchami/vasant panchami 6.jpg',
-      'assets/images/vasant panchami/vasant panchami 7.jpg',
-      'assets/images/vasant panchami/vasant panchami 8.jpg',
-      'assets/images/vasant panchami/vasant panchami 9.jpg',
-    ]
+    'Festival name' : 'Ram Navami',
+    'Text': 'Create your Ram Navami Templates',
+    'Images' : 'asset/img/festival_img/Ram_Navami.jpg',
+    'Color' : Colors.lightGreen,
+    'image':[
+      'asset/img/festival_img/ram navami/Ram_Navami.jpg',
+      'asset/img/festival_img/ram navami/img1.jpg',
+      'asset/img/festival_img/ram navami/img2.jpg',
+      'asset/img/festival_img/ram navami/img3.jpg',
+      'asset/img/festival_img/ram navami/img4.jpg',
+      'asset/img/festival_img/ram navami/img5.jpg',
+    ],
   },
-
+  {
+    'Festival name' : 'Karwa Chauth',
+    'Text': 'Create your Karwa Chauth Templates',
+    'Images' : 'asset/img/festival_img/Karwa_Chauth.jpg',
+    'Color' : Colors.teal,
+    'image':[
+      'asset/img/festival_img/karwa chauth/Karwa_Chauth.jpg',
+      'asset/img/festival_img/karwa chauth/img1.jpg',
+      'asset/img/festival_img/karwa chauth/img2.jpg',
+      'asset/img/festival_img/karwa chauth/img3.jpg',
+      'asset/img/festival_img/karwa chauth/img4.jpg',
+      'asset/img/festival_img/karwa chauth/img5.jpg',
+    ],
+  },
 ];
 
 List Colorlist = [
