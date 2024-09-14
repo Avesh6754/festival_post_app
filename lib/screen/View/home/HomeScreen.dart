@@ -71,6 +71,7 @@ cursorColor: button,
                         image: DecorationImage(image: AssetImage('${myfestivak[index].image},'))
                     ),
                   ),),
+
                   SizedBox(width: w*0.040,),
                 ],
               ),
