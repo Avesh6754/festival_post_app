@@ -1,3 +1,4 @@
+import 'package:festival_post_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 
@@ -18,6 +19,7 @@ class _My_festival_appState extends State<My_festival_app> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      routes: routes,
     );
   }
 }

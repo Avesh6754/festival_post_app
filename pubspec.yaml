@@ -35,20 +35,16 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
-  get: ^4.6.6
-  http: ^1.2.2
   drop_shadow: ^0.1.0
   glowy_borders: ^1.0.2
+  animated_text_kit: ^4.2.2
   clay_containers: ^0.3.4
   glass_kit: ^4.0.1
   translator: ^1.0.0
-  path: ^1.9.0
   flutter_expandable_fab: ^2.2.0
   overlapped_carousel: ^1.0.2
   carousel_slider: ^5.0.0
-  path_provider: ^2.1.4
   image_gallery_saver: ^2.0.3
-  share_extend: ^2.0.0
   flutter_wallpaper_manager: ^0.0.4
   google_fonts: ^6.2.1
   flutter_hsvcolor_picker: ^1.5.0
@@ -80,18 +76,24 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    - assets/images/
-    - assets/images/Diwali/
-    - assets/images/Makar sankranti/
-    - assets/images/Dussera/
-    - assets/images/navratri/
-    - assets/images/rakshabandhan/
-    - assets/images/ganesh/
-    - assets/images/holi/
-    - assets/images/independence/
-    - assets/images/janmashtami/
-    - assets/images/vasant panchami/
-    - assets/images/mahashivratri/
+    - asset/img/
+    - asset/img/festival_img/
+    - asset/img/festival_img/diwali/
+    - asset/img/festival_img/Raksha Bandhan/
+    - asset/img/festival_img/pogal/
+    - asset/img/festival_img/maker sakranti/
+    - asset/img/festival_img/Basnt panchami/
+    - asset/img/festival_img/maha shivratri/
+    - asset/img/festival_img/navratri/
+    - asset/img/festival_img/holi/
+    - asset/img/festival_img/bhai dooj/
+    - asset/img/festival_img/ganesh/
+    - asset/img/festival_img/independence/
+    - asset/img/festival_img/republic/
+    - asset/img/festival_img/krishna janmashtami/
+    - asset/img/festival_img/dussehra/
+    - asset/img/festival_img/ram navami/
+    - asset/img/festival_img/karwa chauth/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
