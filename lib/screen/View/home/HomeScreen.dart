@@ -68,7 +68,9 @@ class _HomescreenState extends State<Homescreen> {
                         borderSide: BorderSide(color: button, width: 1.5),
                         borderRadius: BorderRadius.circular(15)),
                     enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15))),
+                      borderSide: BorderSide(color: Colors.white60,width: 1),
+                        borderRadius: BorderRadius.circular(15),
+                    )),
               ),
               SizedBox(
                 height: h * 0.020,
@@ -81,7 +83,7 @@ class _HomescreenState extends State<Homescreen> {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 15),
+                        fontSize: w / 18),
                   ),
                   Text(
                     'SeeAll',
@@ -111,9 +113,9 @@ class _HomescreenState extends State<Homescreen> {
                           ],
                           borderRadius: BorderRadius.circular(999),
                           glowSize: 0,
-                          borderSize: 1,
+                          borderSize: 3,
                           child: CircleAvatar(
-                              radius: h / 9,
+                              radius: w / 5.7,
                               backgroundImage:
                                   AssetImage('${myfestivak[index].image}')),
                         ),
@@ -132,11 +134,11 @@ class _HomescreenState extends State<Homescreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Large Festival',
+                    'Diwali Post',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 16),
+                        fontSize: w / 18),
                   ),
                   Text(
                     'SeeAll',
@@ -155,7 +157,7 @@ class _HomescreenState extends State<Homescreen> {
                 child: Row(
                   children: [
                     ...List.generate(
-                      myfestivak.length,
+                      myfestivak[0].img.length,
                       (index) => Stack(
                         children: [
                           Container(
@@ -166,7 +168,7 @@ class _HomescreenState extends State<Homescreen> {
                                 borderRadius: BorderRadius.circular(15),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('${myfestivak[0].img[2]}'),
+                                        AssetImage('${myfestivak[0].img[index]}'),
                                     fit: BoxFit.cover)),
                             alignment: Alignment.topRight,
                             child: IconButton(style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.black38)),onPressed: () {
@@ -186,11 +188,11 @@ class _HomescreenState extends State<Homescreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Large Festival',
+                    'More Post',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 16),
+                        fontSize: w / 18),
                   ),
                   Text(
                     'SeeAll',
@@ -220,7 +222,7 @@ class _HomescreenState extends State<Homescreen> {
                                 borderRadius: BorderRadius.circular(15),
                                 image: DecorationImage(
                                     image:
-                                    AssetImage('${myfestivak[1].img[2]}'),
+                                    AssetImage('${myfestivak[index].image}'),
                                     fit: BoxFit.cover)),
                             alignment: Alignment.topRight,
                             child: IconButton(style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.black38)),onPressed: () {
