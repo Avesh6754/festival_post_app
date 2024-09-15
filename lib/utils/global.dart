@@ -1,3 +1,8 @@
+import 'package:festival_post_app/screen/View/Categorypage/category.dart';
+import 'package:festival_post_app/screen/View/Editingpage/editingpage.dart';
+import 'package:festival_post_app/screen/View/Favouritepage/favourite.dart';
+import 'package:festival_post_app/screen/View/Historypage/history.dart';
+import 'package:festival_post_app/screen/View/home/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -39,3 +44,13 @@ List gradient_List = [
 
 ];
 
+List<Widget> screenlist=[
+  Homescreen(),
+  Category(),
+  Editingpage(),
+  Favourite(),
+  History()
+];
+
+var myindex=0;
+bool isGrid=false;

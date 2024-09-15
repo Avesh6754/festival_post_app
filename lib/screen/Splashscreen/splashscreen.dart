@@ -16,7 +16,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     Timer.periodic(Duration(seconds: 4), (timer) {
-      Navigator.of(context).pushReplacementNamed('/home');
+      Navigator.of(context).pushReplacementNamed('/bottom');
     },);
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;

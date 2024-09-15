@@ -1,5 +1,7 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:festival_post_app/model/modelclass.dart';
 import 'package:festival_post_app/model/modellist.dart';
+import 'package:festival_post_app/screen/View/component/component.dart';
 import 'package:festival_post_app/utils/color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -53,24 +55,33 @@ class _HomescreenState extends State<Homescreen> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(8),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TextField(
-                cursorColor: button,
-                decoration: InputDecoration(
+              Container(
+             
+                decoration: BoxDecoration(
+                  color: search,
+                  borderRadius: BorderRadius.circular(15)
+                ),
+                child: TextField(
+                  cursorColor: button,
+                  decoration: InputDecoration(
+                    suffixIcon: Icon(Icons.search,color: Colors.white,),
                     border: OutlineInputBorder(),
-                    hintText: 'Search here...',
-                    hintStyle: TextStyle(color: Colors.white),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: button, width: 1.5),
-                        borderRadius: BorderRadius.circular(15)),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white60,width: 1),
-                        borderRadius: BorderRadius.circular(15),
-                    )),
+                      hintText: 'Search here...',
+                      hintStyle: TextStyle(color: Colors.white),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: button, width: 1.5),
+                          borderRadius: BorderRadius.circular(15)
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white60, width: 1),
+                          borderRadius: BorderRadius.circular(15)
+                      )),
+                ),
               ),
               SizedBox(
                 height: h * 0.020,
@@ -83,14 +94,14 @@ class _HomescreenState extends State<Homescreen> {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 18),
+                        fontSize: 22),
                   ),
                   Text(
                     'SeeAll',
                     style: TextStyle(
                         color: button,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 30),
+                        fontSize: 15),
                   ),
                 ],
               ),
@@ -113,7 +124,7 @@ class _HomescreenState extends State<Homescreen> {
                           ],
                           borderRadius: BorderRadius.circular(999),
                           glowSize: 0,
-                          borderSize: 3,
+                          borderSize: 2.5,
                           child: CircleAvatar(
                               radius: w / 5.7,
                               backgroundImage:
@@ -138,14 +149,14 @@ class _HomescreenState extends State<Homescreen> {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 18),
+                        fontSize: 22),
                   ),
                   Text(
                     'SeeAll',
                     style: TextStyle(
                         color: button,
                         fontWeight: FontWeight.w500,
-                        fontSize: w / 30),
+                        fontSize: 15),
                   ),
                 ],
               ),
@@ -163,17 +174,32 @@ class _HomescreenState extends State<Homescreen> {
                           Container(
                             height: h * 0.250,
                             width: w * 0.400,
-                            margin: EdgeInsets.only(left: 10, right: 10),
+                            margin: EdgeInsets.only(
+                                left: 10, right: 10, top: 8, bottom: 8),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.white60,
+                                    blurRadius: 5,
+                                    spreadRadius: 1,
+                                    offset: Offset(1, 1)
+                                  )
+                                ],
                                 image: DecorationImage(
-                                    image:
-                                        AssetImage('${myfestivak[0].img[index]}'),
+                                    image: AssetImage(
+                                        '${myfestivak[0].img[index]}'),
                                     fit: BoxFit.cover)),
                             alignment: Alignment.topRight,
-                            child: IconButton(style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.black38)),onPressed: () {
-
-                            }, icon: Icon(Icons.bookmark_add_outlined,color: Colors.white,)),
+                            child: IconButton(
+                                style: ButtonStyle(
+                                    backgroundColor:
+                                        WidgetStatePropertyAll(Colors.black38)),
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.bookmark_add_outlined,
+                                  color: Colors.white,
+                                )),
                           )
                         ],
                       ),
@@ -188,7 +214,7 @@ class _HomescreenState extends State<Homescreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'More Post',
+                    'Holi Post',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
@@ -211,23 +237,37 @@ class _HomescreenState extends State<Homescreen> {
                 child: Row(
                   children: [
                     ...List.generate(
-                      myfestivak.length,
-                          (index) => Stack(
+                      myfestivak[7].img.length,
+                      (index) => Stack(
                         children: [
                           Container(
                             height: h * 0.250,
                             width: w * 0.400,
-                            margin: EdgeInsets.only(left: 10, right: 10),
+                            margin: EdgeInsets.only(left: 10, right: 10,top: 8,bottom: 8),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.white60,
+                                      blurRadius: 5,
+                                      spreadRadius: 1,
+                                      offset: Offset(1, 1)
+                                  )
+                                ],
                                 image: DecorationImage(
-                                    image:
-                                    AssetImage('${myfestivak[index].image}'),
+                                    image: AssetImage(
+                                        '${myfestivak[7].img[index]}'),
                                     fit: BoxFit.cover)),
                             alignment: Alignment.topRight,
-                            child: IconButton(style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.black38)),onPressed: () {
-
-                            }, icon: Icon(Icons.bookmark_add_outlined,color: Colors.white,)),
+                            child: IconButton(
+                                style: ButtonStyle(
+                                    backgroundColor:
+                                        WidgetStatePropertyAll(Colors.black38)),
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.bookmark_add_outlined,
+                                  color: Colors.white,
+                                )),
                           )
                         ],
                       ),
