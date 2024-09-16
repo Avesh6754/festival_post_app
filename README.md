@@ -85,11 +85,9 @@ class _PostEditorState extends State<PostEditor> {
   }
 }
 ```
-```dart
+
 3. Color Customization
 Description: Users can customize text color and background color with a color picker.
-
-```
 
 ```dart
 Copy code
