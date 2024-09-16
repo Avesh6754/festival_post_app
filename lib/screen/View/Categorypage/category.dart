@@ -29,22 +29,46 @@ class _CategoryState extends State<Category> {
       backgroundColor: back,
       appBar: AppBar(
         backgroundColor: search,
-        title: Text(
-          'Category',
-          style: TextStyle(color: Colors.white),
+        title: Row(
+          children: [
+            Text(
+              'Category',
+              style: TextStyle(color: Colors.white),
+            ),
+            SizedBox(width: w*0.120,),
+            Expanded(
+              child: Container(
+              height: 40,
+                decoration: BoxDecoration(
+                    color: search,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: TextField(
+                  cursorColor: button,
+                  decoration: InputDecoration(
+                      suffixIcon: Icon(Icons.search,color: Colors.white,),
+                      border: OutlineInputBorder(),
+                      hintText: 'Search here...',
+                      hintStyle: TextStyle(color: Colors.white),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: button, width: 1.5),
+                          borderRadius: BorderRadius.circular(10)
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white60, width: 1),
+                          borderRadius: BorderRadius.circular(10)
+                      )),
+                ),
+              ),
+            ),
+          ],
         ),
+
         elevation: 2,
          shadowColor: Colors.black12,
 
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.circle_notifications,
-              color: button,
-              size: 30,
-            ),
-          ),
+
           IconButton(
               onPressed: () {
                 setState(() {

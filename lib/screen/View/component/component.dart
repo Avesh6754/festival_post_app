@@ -36,18 +36,13 @@ class _BottomState extends State<Bottom> {
         BottomNavigationBarItem(
           backgroundColor: Colors.blue,
           icon: Icon(Icons.home_outlined,size: 25,), label: 'Home',),
-        BottomNavigationBarItem(
-          backgroundColor: Colors.blue,
-          icon: Icon(Icons.category,size: 25,), label: 'Category',),
+
         BottomNavigationBarItem(
             backgroundColor: Colors.blue,
             icon: Icon(Icons.add_circle_outline_outlined,size: 25), label: 'Edit'),
         BottomNavigationBarItem(
-            backgroundColor: Colors.blue,
-            icon: Icon(Icons.book_outlined,size: 25,), label: 'Collection'),
-        BottomNavigationBarItem(
-            backgroundColor: Colors.blue,
-            icon: Icon(Icons.history,size: 25,), label: 'History'),
+          backgroundColor: Colors.blue,
+          icon: Icon(Icons.category,size: 25,), label: 'Category',),
       ]),
     );
   }

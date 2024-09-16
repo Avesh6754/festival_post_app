@@ -3,6 +3,7 @@ import 'package:festival_post_app/model/modelclass.dart';
 import 'package:festival_post_app/model/modellist.dart';
 import 'package:festival_post_app/screen/View/component/component.dart';
 import 'package:festival_post_app/utils/color.dart';
+import 'package:festival_post_app/utils/global.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:glowy_borders/glowy_borders.dart';
@@ -113,22 +114,28 @@ class _HomescreenState extends State<Homescreen> {
                 child: Row(
                   children: [
                     ...List.generate(
-                      myfestivak.length,
-                      (index) => Padding(
-                        padding: const EdgeInsets.only(right: 5, left: 5),
-                        child: AnimatedGradientBorder(
-                          gradientColors: [
-                            Colors.tealAccent,
-                            Colors.teal,
-                            Colors.blue
-                          ],
-                          borderRadius: BorderRadius.circular(999),
-                          glowSize: 0,
-                          borderSize: 2.5,
-                          child: CircleAvatar(
-                              radius: w / 5.7,
-                              backgroundImage:
-                                  AssetImage('${myfestivak[index].image}')),
+                      5,
+                      (index) => GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pushNamed('/edit');
+                          selectedindex=index;
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 5, left: 5),
+                          child: AnimatedGradientBorder(
+                            gradientColors: [
+                              Colors.tealAccent,
+                              Colors.teal,
+                              Colors.blue
+                            ],
+                            borderRadius: BorderRadius.circular(999),
+                            glowSize: 0,
+                            borderSize: 2.5,
+                            child: CircleAvatar(
+                                radius: w / 5.7,
+                                backgroundImage:
+                                    AssetImage('${myfestivak[index].image}')),
+                          ),
                         ),
                       ),
                     ),
@@ -145,7 +152,7 @@ class _HomescreenState extends State<Homescreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Diwali Post',
+                    'Special Post',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
@@ -168,7 +175,7 @@ class _HomescreenState extends State<Homescreen> {
                 child: Row(
                   children: [
                     ...List.generate(
-                      myfestivak[0].img.length,
+                      7,
                       (index) => Stack(
                         children: [
                           Container(
@@ -188,18 +195,8 @@ class _HomescreenState extends State<Homescreen> {
                                 ],
                                 image: DecorationImage(
                                     image: AssetImage(
-                                        '${myfestivak[0].img[index]}'),
+                                        '${myfestivak[index+2].image}'),
                                     fit: BoxFit.cover)),
-                            alignment: Alignment.topRight,
-                            child: IconButton(
-                                style: ButtonStyle(
-                                    backgroundColor:
-                                        WidgetStatePropertyAll(Colors.black38)),
-                                onPressed: () {},
-                                icon: Icon(
-                                  Icons.bookmark_add_outlined,
-                                  color: Colors.white,
-                                )),
                           )
                         ],
                       ),
@@ -214,7 +211,7 @@ class _HomescreenState extends State<Homescreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Holi Post',
+                    'More Post',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
@@ -237,7 +234,7 @@ class _HomescreenState extends State<Homescreen> {
                 child: Row(
                   children: [
                     ...List.generate(
-                      myfestivak[7].img.length,
+                     4,
                       (index) => Stack(
                         children: [
                           Container(
@@ -256,18 +253,8 @@ class _HomescreenState extends State<Homescreen> {
                                 ],
                                 image: DecorationImage(
                                     image: AssetImage(
-                                        '${myfestivak[7].img[index]}'),
+                                        '${myfestivak[index+5].image}'),
                                     fit: BoxFit.cover)),
-                            alignment: Alignment.topRight,
-                            child: IconButton(
-                                style: ButtonStyle(
-                                    backgroundColor:
-                                        WidgetStatePropertyAll(Colors.black38)),
-                                onPressed: () {},
-                                icon: Icon(
-                                  Icons.bookmark_add_outlined,
-                                  color: Colors.white,
-                                )),
                           )
                         ],
                       ),
