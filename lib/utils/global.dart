@@ -1,8 +1,12 @@
+import 'dart:io';
+
+import 'package:festival_post_app/model/modellist.dart';
 import 'package:festival_post_app/screen/View/Categorypage/category.dart';
 import 'package:festival_post_app/screen/View/Editingpage/editingpage.dart';
 import 'package:festival_post_app/screen/View/home/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_picker/image_picker.dart';
 
 
 List Colorlist = [
@@ -19,6 +23,8 @@ List Colorlist = [
   Colors.deepPurple,
   Colors.pinkAccent
 ];
+ImagePicker imagePicker = ImagePicker();
+File? fileImage;
 int textcolorindex = 0;
 List textfamily = [
   GoogleFonts.nunito,
@@ -44,13 +50,29 @@ List gradient_List = [
 
 List<Widget> screenlist=[
   Homescreen(),
-  Editingpage(),
   Category(),
 
 ];
+
+TextEditingController txtphone=TextEditingController(text: '8090357405');
+TextEditingController txtEmail=TextEditingController(text: 'aweshprajapati150@gmail.com');
+
+String? phone;
+String? email;
 
 var myindex=0;
 bool isGrid=false;
 
 var selectedindex=0;
-var currentImage='0';
+var currentImage;
+
+var increrment=15;
+var decrement=15;
+
+
+var bottomcnetr=Alignment.bottomCenter;
+var imagebottomcnetr=Alignment.topLeft;
+
+var currentx=0;
+var currenty=0;
+

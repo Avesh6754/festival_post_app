@@ -2,6 +2,8 @@ import 'package:festival_post_app/model/modellist.dart';
 import 'package:festival_post_app/utils/color.dart';
 import 'package:flutter/material.dart';
 
+import '../../../utils/global.dart';
+
 
 
 class GridViewMethod extends StatefulWidget {
@@ -23,7 +25,10 @@ class _GridViewMethodState extends State<GridViewMethod> {
         physics: BouncingScrollPhysics(),
         itemBuilder: (context, index) => GestureDetector(
           onTap: () {
-            Navigator.of(context).pushNamed('');
+            Navigator.of(context).pushNamed('/edit');
+            selectedindex=0;
+            selectedindex=index;
+            currentImage=myfestivak[selectedindex].img[0];
           },
           child: Card(
             color:myfestivak[index].currentcolor,

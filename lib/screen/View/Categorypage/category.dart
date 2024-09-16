@@ -36,31 +36,6 @@ class _CategoryState extends State<Category> {
               style: TextStyle(color: Colors.white),
             ),
             SizedBox(width: w*0.120,),
-            Expanded(
-              child: Container(
-              height: 40,
-                decoration: BoxDecoration(
-                    color: search,
-                    borderRadius: BorderRadius.circular(10)
-                ),
-                child: TextField(
-                  cursorColor: button,
-                  decoration: InputDecoration(
-                      suffixIcon: Icon(Icons.search,color: Colors.white,),
-                      border: OutlineInputBorder(),
-                      hintText: 'Search here...',
-                      hintStyle: TextStyle(color: Colors.white),
-                      focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: button, width: 1.5),
-                          borderRadius: BorderRadius.circular(10)
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white60, width: 1),
-                          borderRadius: BorderRadius.circular(10)
-                      )),
-                ),
-              ),
-            ),
           ],
         ),
 

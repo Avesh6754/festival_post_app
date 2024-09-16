@@ -1,6 +1,8 @@
 import 'package:festival_post_app/model/modellist.dart';
 import 'package:flutter/material.dart';
 
+import '../../../utils/global.dart';
+
 
 
 class ListViewMethod extends StatefulWidget {
@@ -15,34 +17,42 @@ class _ListViewMethodState extends State<ListViewMethod> {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: myfestivak.length,
-      itemBuilder: (context, index) => Card(
-        color:myfestivak[index].currentcolor,
-        child: ListTile(
-          title: Text(
-            '${myfestivak[index].festival_name}',
-            style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-                color:Colors.white ),
-          ),
-          subtitle: Text(
-            "${myfestivak[index].text}",
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-                fontSize: 13,
-                color:Colors.white,
-                fontWeight: FontWeight.w400,fontStyle: FontStyle.italic),
-          ),
-
-          trailing:Container(
-            height: 50,
-            width: 50,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                shape: BoxShape.circle,
-                image: DecorationImage(image: AssetImage('${myfestivak[index].image}'),fit: BoxFit.cover)
+      itemBuilder: (context, index) => GestureDetector(
+        onTap: () {
+          Navigator.of(context).pushNamed('/edit');
+          selectedindex=0;
+          selectedindex=index;
+          currentImage=myfestivak[selectedindex].img[0];
+        },
+        child: Card(
+          color:myfestivak[index].currentcolor,
+          child: ListTile(
+            title: Text(
+              '${myfestivak[index].festival_name}',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  color:Colors.white ),
             ),
-          ) ,
+            subtitle: Text(
+              "${myfestivak[index].text}",
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                  fontSize: 13,
+                  color:Colors.white,
+                  fontWeight: FontWeight.w400,fontStyle: FontStyle.italic),
+            ),
+
+            trailing:Container(
+              height: 50,
+              width: 50,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                  image: DecorationImage(image: AssetImage('${myfestivak[index].image}'),fit: BoxFit.cover)
+              ),
+            ) ,
+          ),
         ),
       ),
     );

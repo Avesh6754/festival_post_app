@@ -1,6 +1,7 @@
-import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:festival_post_app/model/modelclass.dart';
 import 'package:festival_post_app/model/modellist.dart';
+import 'package:festival_post_app/screen/View/Editingpage/editingpage.dart';
 import 'package:festival_post_app/screen/View/component/component.dart';
 import 'package:festival_post_app/utils/color.dart';
 import 'package:festival_post_app/utils/global.dart';
@@ -117,8 +118,10 @@ class _HomescreenState extends State<Homescreen> {
                       5,
                       (index) => GestureDetector(
                         onTap: () {
-                          Navigator.of(context).pushNamed('/edit');
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Editingpage(),));
+                          selectedindex=0;
                           selectedindex=index;
+                          currentImage=myfestivak[selectedindex].img[0];
                         },
                         child: Padding(
                           padding: const EdgeInsets.only(right: 5, left: 5),
@@ -176,29 +179,33 @@ class _HomescreenState extends State<Homescreen> {
                   children: [
                     ...List.generate(
                       7,
-                      (index) => Stack(
-                        children: [
-                          Container(
-                            height: h * 0.250,
-                            width: w * 0.400,
-                            margin: EdgeInsets.only(
-                                left: 10, right: 10, top: 8, bottom: 8),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.white60,
-                                    blurRadius: 5,
-                                    spreadRadius: 1,
-                                    offset: Offset(1, 1)
-                                  )
-                                ],
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        '${myfestivak[index+2].image}'),
-                                    fit: BoxFit.cover)),
-                          )
-                        ],
+                      (index) => GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pushNamed('/edit');
+                          selectedindex=0;
+                          selectedindex=index+2;
+                          currentImage=myfestivak[selectedindex].img[0];
+                        },
+                        child: Container(
+                          height: h * 0.250,
+                          width: w * 0.400,
+                          margin: EdgeInsets.only(
+                              left: 10, right: 10, top: 8, bottom: 8),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.white60,
+                                  blurRadius: 5,
+                                  spreadRadius: 1,
+                                  offset: Offset(1, 1)
+                                )
+                              ],
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      '${myfestivak[index+2].image}'),
+                                  fit: BoxFit.cover)),
+                        ),
                       ),
                     )
                   ],
@@ -235,28 +242,32 @@ class _HomescreenState extends State<Homescreen> {
                   children: [
                     ...List.generate(
                      4,
-                      (index) => Stack(
-                        children: [
-                          Container(
-                            height: h * 0.250,
-                            width: w * 0.400,
-                            margin: EdgeInsets.only(left: 10, right: 10,top: 8,bottom: 8),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.white60,
-                                      blurRadius: 5,
-                                      spreadRadius: 1,
-                                      offset: Offset(1, 1)
-                                  )
-                                ],
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        '${myfestivak[index+5].image}'),
-                                    fit: BoxFit.cover)),
-                          )
-                        ],
+                      (index) => GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pushNamed('/edit');
+                          selectedindex=0;
+                          selectedindex=index+5;
+                          currentImage=myfestivak[selectedindex].img[0];
+                        },
+                        child: Container(
+                          height: h * 0.250,
+                          width: w * 0.400,
+                          margin: EdgeInsets.only(left: 10, right: 10,top: 8,bottom: 8),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.white60,
+                                    blurRadius: 5,
+                                    spreadRadius: 1,
+                                    offset: Offset(1, 1)
+                                )
+                              ],
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      '${myfestivak[index+5].image}'),
+                                  fit: BoxFit.cover)),
+                        ),
                       ),
                     )
                   ],
